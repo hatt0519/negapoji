@@ -5,7 +5,9 @@ describe Negapoji do
     expect(Negapoji::VERSION).not_to be nil
   end
 
-  it 'does something useful' do
-    expect(false).to eq(true)
+  describe "#pointing" do
+    it 'return type of nemeric' do
+      expect(Negapoji.pointing("このテストが成功することを祈っています。").is_a?(Numeric))
+    end
   end
 end
