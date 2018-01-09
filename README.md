@@ -6,23 +6,27 @@ TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'negapoji'
 ```
+git clone https://github.com/hatt0519/negapoji.git
 
-And then execute:
+cd negapoji
 
-    $ bundle
+bundle install
 
-Or install it yourself as:
+gem build negapoji.gemspec
 
-    $ gem install negapoji
+gem install negapoji
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+require 'negapoji'
+
+while str = STDIN.gets
+  p Negapoji.judge(str) if text.is_a?(String)
+end
+```
 
 ## Development
 
@@ -38,4 +42,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
